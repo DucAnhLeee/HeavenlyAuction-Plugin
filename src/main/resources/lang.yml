@@ -1,0 +1,57 @@
+messages:
+  prefix: "&6&lVạn Bảo Lâu &8» &f"
+  no-permission: "%prefix%&cĐạo hữu không đủ quyền hạn để thực hiện thao tác này!"
+  only-player: "%prefix%&cChỉ có tu sĩ trong tiên giới mới có thể sử dụng lệnh này!"
+  inventory-full: "%prefix%&cTúi Càn Khôn của đạo hữu đã đầy, không thể chứa thêm vật phẩm!"
+  mailbox-full: "%prefix%&cHòm thư tín Càn Khôn Đãi của bạn đã đầy (%max% vật phẩm). Vui lòng dọn dẹp trước!"
+  not-enough-money: "%prefix%&cĐạo hữu không đủ &e%price% %currency%&c để tiến hành giao dịch!"
+  target-not-found: "%prefix%&cKhông tìm thấy vật phẩm hoặc đối tượng yêu cầu."
+
+  market:
+    opening: "%prefix%&eĐang mở giao diện Vạn Bảo Lâu..."
+    sell-usage: "%prefix%&cDùng: &e/vbl sell <giá> [số_lượng] [eco|points|xuhethong]"
+    sell-success: "%prefix%&aĐã đăng bán vật phẩm lên Vạn Bảo Lâu với giá &e%price% %currency%&a!"
+    sell-no-item: "%prefix%&cĐạo hữu phải cầm bảo vật trên tay chính để đăng bán!"
+    sell-invalid-price: "%prefix%&cGiá niêm yết không hợp lệ (phải là số dương lớn hơn 0)!"
+    sell-limit-reached: "%prefix%&cĐạo hữu chỉ được đăng tối đa &e%limit% &cbảo vật cùng lúc trên sàn!"
+    buy-success: "%prefix%&aGiao dịch thành công! Đạo hữu đã mua &e%item% &avới giá &e%price% %currency%&a."
+    cannot-buy-own: "%prefix%&cĐạo hữu không thể tự mua bảo vật của chính mình!"
+    sold-notify: "%prefix%&aBảo vật &e%item% &acủa đạo hữu đã được bán cho &e%buyer% &avới giá &e%price% %currency%&a! Tiền đã gửi vào Càn Khôn Đãi."
+    cancel-success: "%prefix%&aĐã gỡ bảo vật khỏi sàn giao dịch và chuyển về Càn Khôn Đãi (Hòm đồ)!"
+
+  bounty:
+    treo-usage: "%prefix%&cDùng: &e/vbl treo <số_lượng> <tiền_thưởng> [eco|points|xuhethong]"
+    treo-success: "%prefix%&aĐã phát lệnh Huyền Thưởng &e%amount%x %item% &avới phần thưởng &e%reward% %currency%&a!"
+    treo-no-item: "%prefix%&cĐạo hữu phải cầm vật phẩm mẫu trên tay để phát Huyền Thưởng Lệnh!"
+    treo-invalid-amount: "%prefix%&cSố lượng cần thu thập phải lớn hơn 0!"
+    treo-invalid-reward: "%prefix%&cTiền thưởng treo phải lớn hơn 0!"
+    treo-limit-reached: "%prefix%&cĐạo hữu chỉ được phát tối đa &e%limit% &clệnh Huyền Thưởng cùng lúc!"
+    cancel-success: "%prefix%&aĐã hủy Huyền Thưởng Lệnh và hoàn trả &e%reward% %currency% &avào Càn Khôn Đãi!"
+    fulfill-success: "%prefix%&aĐạo hữu đã hoàn thành Huyền Thưởng Lệnh và nhận &e%reward% %currency%&a!"
+    fulfill-notify-creator: "%prefix%&6[Huyền Thưởng] &aTu sĩ &e%fulfiller% &ađã giao nộp &e%amount%x %item%&a! Vật phẩm đã vào Càn Khôn Đãi của bạn."
+    not-enough-items: "%prefix%&cĐạo hữu không có đủ &e%required%x %item% &ctrong túi đồ để nộp thưởng!"
+    cannot-fulfill-own: "%prefix%&cĐạo hữu không thể tự nộp Huyền Thưởng Lệnh của chính mình!"
+
+  auction:
+    create-usage: "%prefix%&cDùng: &e/vbl daugia <giá_khởi_điểm> <bước_giá> [thời_gian_giây] [eco|points|xuhethong]"
+    create-success: "%prefix%&aĐã mở phiên đấu giá cho bảo vật với khởi điểm &e%price% %currency%&a!"
+    bid-success: "%prefix%&aĐạo hữu đã ra giá thành công: &e%bid% %currency%&a!"
+    bid-too-low: "%prefix%&cGiá đấu tối thiểu tiếp theo phải từ &e%min% %currency% &ctrở lên!"
+    outbid-notify: "%prefix%&cĐạo hữu đã bị người khác trả giá cao hơn (&e%bid% %currency%&c). Toàn bộ tiền cược đã được hoàn trả!"
+    end-winner: "%prefix%&aChúc mừng đạo hữu đã thắng đấu giá &e%item% &avới giá &e%price% %currency%&a! Bảo vật đã vào Càn Khôn Đãi."
+    end-seller: "%prefix%&aBảo vật đấu giá của đạo hữu đã được bán cho &e%winner% &avới giá &e%price% %currency%&a! Tiền đã vào Càn Khôn Đãi."
+    end-no-bids: "%prefix%&ePhiên đấu giá đã kết thúc mà không có ai ra giá. Bảo vật đã được chuyển về Càn Khôn Đãi."
+    server-start: "%prefix%&d&l[ĐẤU GIÁ HỆ THỐNG] &eMột phiên đấu giá mới cho &f%item% &eđã bắt đầu với giá sàn &a%price% %currency%&e! Dùng &b/vbl &eđể tham gia!"
+    server-mystery-start: "%prefix%&5&l[THIÊN BẢO BÍ ẨN] &dThiên Bảo Đấu Giá xuất hiện Cổ Vật Thượng Cổ Chưa Giám Định! Luồng khí tức hỗn mang đang bao phủ... Dùng &b/vbl &dđể ra giá sở hữu bảo vật!"
+
+  mailbox:
+    claimed-item: "%prefix%&aĐã nhận bảo vật vào túi đồ thành công!"
+    claimed-money: "%prefix%&aĐã rút &e%amount% %currency% &avào tài khoản thành công!"
+    inventory-full-claim: "%prefix%&cTúi Càn Khôn của bạn không đủ chỗ trống để nhận vật phẩm này!"
+
+  admin:
+    usage: "%prefix%&cDùng: &e/vbladmin <reload|startauction|secretauction|purge>"
+    reloaded: "%prefix%&aĐã tải lại cấu hình config.yml và lang.yml thành công!"
+    auction-forced: "%prefix%&aĐã kích hoạt ngay phiên đấu giá hệ thống thành công!"
+    mystery-forced: "%prefix%&aĐã kích hoạt ngay phiên đấu giá Cổ Vật Ẩn Vị thành công!"
+    purge-success: "%prefix%&aĐã cưỡng chế dọn dẹp dữ liệu cũ và tối ưu VACUUM SQLite thành công!"

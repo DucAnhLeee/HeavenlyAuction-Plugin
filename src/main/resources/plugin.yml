@@ -1,0 +1,25 @@
+name: HeavenlyAuction
+version: 1.0.0
+main: com.heavenlyauction.HeavenlyAuction
+api-version: '1.21'
+author: Antigravity
+description: Hệ thống Vạn Bảo Lâu (Chợ Trời, Huyền Thưởng Lệnh & Đấu Giá Tu Tiên) chuẩn xác, tối ưu dữ liệu.
+softdepend: [Vault, PlayerPoints, CoinsEngine, PlaceholderAPI]
+
+commands:
+  vbl:
+    description: Lệnh chính mở Vạn Bảo Lâu, Chợ Trời, Huyền Thưởng Lệnh, Đấu Giá và Càn Khôn Đãi.
+    aliases: [vanbaolau, chotroi, ah]
+    permission: vbl.use
+  vbladmin:
+    description: Lệnh quản trị hệ thống Vạn Bảo Lâu.
+    aliases: [vanbaolauadmin, ahadmin]
+    permission: vbl.admin
+
+permissions:
+  vbl.use:
+    description: Cho phép sử dụng các tính năng cơ bản của Vạn Bảo Lâu.
+    default: true
+  vbl.admin:
+    description: Toàn quyền quản trị Vạn Bảo Lâu.
+    default: op
